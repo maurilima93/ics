@@ -26,3 +26,21 @@ The image captioning system involves two main components:
    ```bash
    git clone https://github.com/maurilima93/ics.git
    cd ics
+
+2. Install the required dependencies:
+   ```bash
+   pip install tensorflow keras numpy
+
+3. Ensure you have the descriptions.txt file in the project directory. This file should contain the image IDs and corresponding captions.
+
+4. Prepare your image dataset. Place your images in a directory and update the image_paths list in the ics.py script with the correct paths to your images.
+
+5. Usage - Extract image features using the pre-trained VGG16 model and prepare the training sequences:
+   ```bash
+   python ics.py
+
+## Acknowledgements
+This project utilizes the COCO dataset for training and evaluation. Special thanks to the developers of TensorFlow and Keras for their excellent deep learning libraries.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
